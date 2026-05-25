@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow - Organize seus estudos de programação</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabeçalho fixo com navegação -->
+    <header>
+        <nav class="container" aria-label="Navegação principal">
+            <a href="#" class="logo" aria-label="TechFlow - página inicial">TechFlow</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text animate-in">
+                        <h1 id="hero-title">A estrutura que organizou meus estudos pra eu finalmente entender programação.</h1>
+                        <p>Um sistema simples no Notion pra organizar conceitos, projetos, anotações e códigos, mesmo começando do zero e tendo
+                            uma rotina caótica.</p>
+                        <button class="cta-button" onclick="scrollToPrice()">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            Quero organizar meus estudos
+                            </button>
+                            </div>
+                            <figure class="hero-mockup animate-in" aria-label="Preview do sistema TechFlow no Notion">
+                                <img src="techflow2.png" alt="Dashboard do TechFlow no Notion"
+                                    style="width: 100%; border-radius: 16px; box-shadow: 0 50px 100px rgba(0,0,0,0.5);">
+                            </figure>
+                            </div>
+                            </div>
+        </section>
+
+        <!-- Dores do usuário -->
+        <section class="pain-section" aria-labelledby="pain-title">
+            <div class="container">
+                <div class="pain-content">
+                    <h2 id="pain-title">Você até tenta manter uma rotina de estudos<br>Mas quando vê:</h2>
+                    <ul class="pain-grid" role="list">
+                        <li class="pain-card animate-in">
+                            <h3><i class="fas fa-bookmark pain-card__icon" aria-hidden="true"></i>conteúdo salvo em vários lugares
+                                diferentes e você não acha nada</h3>
+                        </li>
+                        <li class="pain-card animate-in">
+                            <h3><i class="fas fa-code pain-card__icon" aria-hidden="true"></i>projeto pela metade que você nem
+                                lembra onde parou</h3>
+                        </li>
+                        <li class="pain-card animate-in">
+                            <h3><i class="fas fa-play-circle pain-card__icon" aria-hidden="true"></i>aulas que você
+                                assistiu mas não anotou nada</h3>
+                        </li>
+                        <li class="pain-card animate-in">
+                            <h3><i class="fas fa-exclamation-triangle pain-card__icon" aria-hidden="true"></i>sensação de que o
+                                conteúdo tá acumulando e você não vai dar conta</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Narrativa / história do produto -->
+        <section class="narrative" aria-labelledby="narrative-title">
+            <div class="container">
+                <div class="narrative-content">
+                    <h2 id="narrative-title">Parecia que quanto mais eu aprendia, mais eu me perdia.</h2>
+                    <p>Eu tinha a sensação de que sempre precisava me organizar do zero antes de realmente estudar.</p>
+                    <p>
+                        Com o tempo, isso foi me cansando mais do que o próprio conteúdo. Eu ia perdendo a vontade de continuar porque tudo parecia desorganizado demais pra acompanhar.
+                        Então eu comecei a montar, aos poucos, um espaço simples, visual e funcional pra reunir tudo num só lugar e parar de me perder no meio de tanto conteúdo.<br>
+                        <strong>E assim nasceu o TechFlow.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Funcionalidades -->
+        <section class="features" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="text-center">O que tem no sistema?</h2>
+                <ul class="features-grid" role="list">
+                    <li class="feature-card animate-in">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Centralização dos estudos</h3>
+                        <p>Tudo em um só lugar: conceitos, projetos, anotações e códigos. Pare de pular entre 15 abas tentando achar o conteúdo.</p>
+                    </li>
+                    <li class="feature-card animate-in">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Estrutura simples e visual</h3>
+                        <p>Dashboard limpo e intuitivo, como o Notion foi feito pra ser. Sem complicações, só clareza.</p>
+                    </li>
+                    <li class="feature-card animate-in">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Sistema fácil de adaptar</h3>
+                        <p>Funciona com qualquer rotina. Estuda 30min ou 3h por dia? Se adapta perfeitamente.</p>
+                    </li>
+                    <li class="feature-card animate-in">
+                        <div class="feature-icon" aria-hidden="true">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Espaço pra tudo</h3>
+                        <p>Anotações de código, conceitos importantes, planejamento de projetos, matérias complementares, revisões automatizadas e espaço para anotações.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Para quem é -->
+        <section class="for-whom" aria-labelledby="for-whom-title">
+            <div class="container">
+                <h2 id="for-whom-title" class="text-center">Pra quem é:</h2>
+                <ul class="checklist" role="list">
+                    <li class="checklist-item">
+                        <span class="checkmark" aria-hidden="true">✓</span>
+                        <span>Tá começando programação e não sabe como organizar tudo</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checkmark" aria-hidden="true">✓</span>
+                        <span>Vive se perdendo no meio dos conteúdos</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checkmark" aria-hidden="true">✓</span>
+                        <span>Quer estudar de forma mais leve e visual</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checkmark" aria-hidden="true">✓</span>
+                        <span>Sente que não consegue manter constância</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checkmark" aria-hidden="true">✓</span>
+                        <span>Quer ter um lugar único pros estudos, projetos e anotações</span>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="checkmark" aria-hidden="true">✓</span>
+                        <span>Estuda sozinho e precisa de mais clareza</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Antes e depois -->
+        <section class="before-after" aria-labelledby="before-after-title">
+            <div class="container">
+                <h2 id="before-after-title" class="visually-hidden">Antes e depois do TechFlow</h2>
+                <div class="comparison" role="list">
+                    <article class="comparison-item" role="listitem">
+                        <span class="status-badge status-badge--before">ANTES</span>
+                        <h3>Estudar parecia um monte de informação solta:</h3>
+                        <p>Aba aberta, anotação perdida, projeto esquecido e aquela sensação horrível de estar sempre atrasado.</p>
+                    </article>
+                    <article class="comparison-item" role="listitem">
+                        <span class="status-badge status-badge--after">DEPOIS</span>
+                        <h3>Estudar ficou muito mais leve.</h3>
+                        <p>Não porque eu virei a pessoa mais disciplinada do mundo. Mas porque finalmente ficou fácil continuar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- O que você recebe -->
+        <section class="what-you-get" aria-labelledby="benefits-title">
+            <div class="container">
+                <h2 id="benefits-title" class="text-center">O que você recebe:</h2>
+                <ul class="benefits-grid" role="list">
+                    <li class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div>
+                            <h3>Template completo no Notion</h3>
+                            <p>Sistema pronto pra usar em 5 minutos</p>
+                        </div>
+                    </li>
+                    <li class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3>Acesso imediato</h3>
+                            <p>Link do sistema disponível assim que comprar</p>
+                        </div>
+                    </li>
+                    <li class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div>
+                            <h3>Tutorial simples de configuração</h3>
+                            <p>Videos curtos mostrando como usar a ferramenta</p>
+                        </div>
+                    </li>
+                    <li class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div>
+                            <h3>Personalização total</h3>
+                            <p>Mude cores, páginas, tudo do seu jeito</p>
+                        </div>
+                    </li>
+                    <li class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Atualizações futuras</h3>
+                            <p>Sempre com as melhorias que você precisa</p>
+                        </div>
+                    </li>
+                    <li class="benefit-card">
+                        <div class="benefit-icon" aria-hidden="true">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <h3>Sistema pensado pra facilitar</h3>
+                            <p>Não complicar ainda mais sua rotina</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Preço -->
+        <section class="pricing" id="price" aria-labelledby="pricing-title">
+            <div class="container">
+                <article class="price-card">
+                    <h2 id="pricing-title" class="price-card__title">Um valor pequeno por algo que você vai usar literalmente toda vez que sentar pra estudar.</h2>
+                    <p class="price-card__subtitle">Aprender coisas novas já é desafiador o suficiente. Se organizar não precisa ser.</p>
+                    <p class="price-amount" aria-label="Preço: R$ 29,90">R$ 29,90</p>
+                    <button class="cta-button cta-button--large">
+                        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                        Quero estudar sem me perder
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title" class="text-center">FAQ</h2>
+                <div class="faq-container">
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Funciona pra iniciantes?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Perfeito pra quem tá começando. O sistema é simples e visual, feito exatamente pra quem ainda não sabe como organizar os estudos.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Precisa pagar o Notion?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Não! Funciona 100% na versão gratuita do Notion. Sem custos extras.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Funciona no celular?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Sim! O template é totalmente responsivo e funciona perfeitamente no app do Notion mobile ou no navegador.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Tem suporte?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>O template já é bem intuitivo, mas se surgir alguma dúvida ou problema, você pode me chamar no Instagram @nathdelima.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Consigo personalizar?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Totalmente! É seu template. Pode mudar cores, adicionar/remover páginas, tudo do seu jeito.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Serve só pra programação?
+                            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="faq-answer" role="region">
+                            <p>Apesar de ter sido criado pensando em estudantes de programação, ele funciona perfeitamente pra outras áreas da tecnologia e estudos autodidatas.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="final-cta" aria-labelledby="final-cta-title">
+            <div class="container">
+                <div class="final-cta-content">
+                    <h2 id="final-cta-title">Você não precisa virar a pessoa mais disciplinada do mundo pra conseguir estudar.</h2>
+                    <p class="final-cta__subtitle">Você só precisa de um sistema que realmente te ajude a continuar.</p>
+                    <button class="cta-button cta-button--large">
+                        <i class="fas fa-rocket" aria-hidden="true"></i>
+                        Quero estudar sem me perder
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
